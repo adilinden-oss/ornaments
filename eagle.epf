@@ -460,7 +460,7 @@ UsedLibrary="snowflake.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 1154 674"
+Loc="178 87 1161 486"
 State=2
 Number=0
 
