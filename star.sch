@@ -56,7 +56,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -4973,11 +4973,11 @@ Bytes In-System Programmable Flash</description>
 </classes>
 <parts>
 <part name="U2" library="snowflake" deviceset="ATTINY*5" device="-20SU-NOSILK"/>
-<part name="R1" library="snowflake" deviceset="R_" device="0805NOSILK"/>
-<part name="R2" library="snowflake" deviceset="R_" device="0805NOSILK"/>
-<part name="R3" library="snowflake" deviceset="R_" device="0805NOSILK"/>
-<part name="R4" library="snowflake" deviceset="R_" device="0805NOSILK"/>
-<part name="R5" library="snowflake" deviceset="R_" device="0805NOSILK"/>
+<part name="R1" library="snowflake" deviceset="R_" device="0805NOSILK" value="47"/>
+<part name="R2" library="snowflake" deviceset="R_" device="0805NOSILK" value="47"/>
+<part name="R3" library="snowflake" deviceset="R_" device="0805NOSILK" value="47"/>
+<part name="R4" library="snowflake" deviceset="R_" device="0805NOSILK" value="47"/>
+<part name="R5" library="snowflake" deviceset="R_" device="0805NOSILK" value="47"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D6" library="snowflake" deviceset="LED" device="CHIP-LED0805NOSILK"/>
@@ -5001,14 +5001,14 @@ Bytes In-System Programmable Flash</description>
 <part name="D19" library="snowflake" deviceset="LED" device="CHIP-LED0805NOSILK"/>
 <part name="D20" library="snowflake" deviceset="LED" device="CHIP-LED0805NOSILK"/>
 <part name="J2" library="snowflake" deviceset="M03X2" device="-NOSILK"/>
-<part name="C1" library="snowflake" deviceset="C_" device="0805NOSILK"/>
-<part name="C2" library="snowflake" deviceset="C_" device="0805NOSILK"/>
+<part name="C1" library="snowflake" deviceset="C_" device="0805NOSILK" value="1u"/>
+<part name="C2" library="snowflake" deviceset="C_" device="0805NOSILK" value="10u"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U1" library="snowflake" deviceset="V_REG_MCP170X" device="-CB-NOSILK"/>
+<part name="U1" library="snowflake" deviceset="V_REG_MCP170X" device="-CB-NOSILK" value="MCP1702-5V"/>
 <part name="J1" library="adi-misc" deviceset="CON_TERMINAL_HOLES" device=""/>
 </parts>
 <sheets>
@@ -5017,11 +5017,26 @@ Bytes In-System Programmable Flash</description>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="40.64" y="43.18"/>
-<instance part="R1" gate="G$1" x="93.98" y="55.88"/>
-<instance part="R2" gate="G$1" x="93.98" y="50.8"/>
-<instance part="R3" gate="G$1" x="93.98" y="45.72"/>
-<instance part="R4" gate="G$1" x="93.98" y="40.64"/>
-<instance part="R5" gate="G$1" x="93.98" y="35.56"/>
+<instance part="R1" gate="G$1" x="93.98" y="55.88" smashed="yes">
+<attribute name="NAME" x="88.9" y="57.4675" size="1.778" layer="95"/>
+<attribute name="VALUE" x="96.52" y="52.705" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="93.98" y="50.8" smashed="yes">
+<attribute name="NAME" x="88.9" y="52.3875" size="1.778" layer="95"/>
+<attribute name="VALUE" x="96.52" y="47.625" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="93.98" y="45.72" smashed="yes">
+<attribute name="NAME" x="88.9" y="47.3075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="96.52" y="42.545" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="93.98" y="40.64" smashed="yes">
+<attribute name="NAME" x="88.9" y="42.2275" size="1.778" layer="95"/>
+<attribute name="VALUE" x="96.52" y="37.465" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="93.98" y="35.56" smashed="yes">
+<attribute name="NAME" x="88.9" y="37.1475" size="1.778" layer="95"/>
+<attribute name="VALUE" x="96.52" y="32.385" size="1.778" layer="96"/>
+</instance>
 <instance part="SUPPLY1" gate="G$1" x="2.54" y="63.5"/>
 <instance part="GND1" gate="1" x="2.54" y="22.86"/>
 <instance part="D6" gate="G$1" x="137.16" y="43.18"/>
