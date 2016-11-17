@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1359,9 +1359,9 @@ Outline Package (EIAJ)&lt;/B&gt;&lt;p&gt;
 Outline Package (EIAJ)</description>
 <circle x="-1.778" y="-1.27" radius="0.3175" width="0" layer="21"/>
 <wire x1="2.4" y1="2.43" x2="2.4" y2="-1.93" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.93" x2="2.4" y2="-2.43" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.93" x2="2.4" y2="-2.43" width="0.2032" layer="52"/>
 <wire x1="2.4" y1="-2.43" x2="-2.4" y2="-2.43" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-2.43" x2="-2.4" y2="-1.93" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-2.43" x2="-2.4" y2="-1.93" width="0.2032" layer="51"/>
 <wire x1="-2.4" y1="-1.93" x2="-2.4" y2="2.43" width="0.2032" layer="51"/>
 <wire x1="-2.4" y1="2.43" x2="2.4" y2="2.43" width="0.2032" layer="51"/>
 <wire x1="2.4" y1="-1.93" x2="-2.4" y2="-1.93" width="0.2032" layer="51"/>
