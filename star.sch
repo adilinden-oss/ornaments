@@ -4972,7 +4972,7 @@ Bytes In-System Programmable Flash</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="snowflake" deviceset="ATTINY*5" device="-20SU-NOSILK"/>
+<part name="U2" library="snowflake" deviceset="ATTINY*5" device="-20SU-NOSILK"/>
 <part name="R1" library="snowflake" deviceset="R_" device="0805NOSILK"/>
 <part name="R2" library="snowflake" deviceset="R_" device="0805NOSILK"/>
 <part name="R3" library="snowflake" deviceset="R_" device="0805NOSILK"/>
@@ -5000,24 +5000,23 @@ Bytes In-System Programmable Flash</description>
 <part name="D18" library="snowflake" deviceset="LED" device="CHIP-LED0805NOSILK"/>
 <part name="D19" library="snowflake" deviceset="LED" device="CHIP-LED0805NOSILK"/>
 <part name="D20" library="snowflake" deviceset="LED" device="CHIP-LED0805NOSILK"/>
+<part name="J2" library="snowflake" deviceset="M03X2" device="-NOSILK"/>
 <part name="C1" library="snowflake" deviceset="C_" device="0805NOSILK"/>
-<part name="J1" library="snowflake" deviceset="M03X2" device="-NOSILK"/>
 <part name="C2" library="snowflake" deviceset="C_" device="0805NOSILK"/>
-<part name="C3" library="snowflake" deviceset="C_" device="0805NOSILK"/>
-<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U2" library="snowflake" deviceset="V_REG_MCP170X" device="-CB-NOSILK"/>
-<part name="J2" library="adi-misc" deviceset="CON_TERMINAL_HOLES" device=""/>
+<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U1" library="snowflake" deviceset="V_REG_MCP170X" device="-CB-NOSILK"/>
+<part name="J1" library="adi-misc" deviceset="CON_TERMINAL_HOLES" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="40.64" y="43.18"/>
+<instance part="U2" gate="G$1" x="40.64" y="43.18"/>
 <instance part="R1" gate="G$1" x="93.98" y="55.88"/>
 <instance part="R2" gate="G$1" x="93.98" y="50.8"/>
 <instance part="R3" gate="G$1" x="93.98" y="45.72"/>
@@ -5045,33 +5044,29 @@ Bytes In-System Programmable Flash</description>
 <instance part="D18" gate="G$1" x="182.88" y="55.88"/>
 <instance part="D19" gate="G$1" x="182.88" y="43.18"/>
 <instance part="D20" gate="G$1" x="182.88" y="30.48"/>
-<instance part="C1" gate="G$1" x="2.54" y="43.18" rot="R90"/>
-<instance part="J1" gate="G$1" x="40.64" y="15.24"/>
-<instance part="C2" gate="G$1" x="27.94" y="78.74" rot="R90"/>
-<instance part="C3" gate="G$1" x="55.88" y="78.74" rot="R90"/>
-<instance part="GND2" gate="1" x="27.94" y="71.12"/>
-<instance part="GND3" gate="1" x="40.64" y="71.12"/>
-<instance part="GND4" gate="1" x="55.88" y="71.12"/>
+<instance part="J2" gate="G$1" x="40.64" y="15.24"/>
+<instance part="C1" gate="G$1" x="27.94" y="78.74" rot="R90"/>
+<instance part="C2" gate="G$1" x="55.88" y="78.74" rot="R90"/>
+<instance part="GND3" gate="1" x="27.94" y="71.12"/>
+<instance part="GND4" gate="1" x="40.64" y="71.12"/>
+<instance part="GND5" gate="1" x="55.88" y="71.12"/>
 <instance part="SUPPLY2" gate="G$1" x="55.88" y="86.36"/>
-<instance part="GND5" gate="1" x="20.32" y="71.12"/>
-<instance part="U2" gate="G$1" x="40.64" y="83.82"/>
-<instance part="J2" gate="G$1" x="17.78" y="83.82" rot="MR0"/>
+<instance part="GND2" gate="1" x="20.32" y="71.12"/>
+<instance part="U1" gate="G$1" x="40.64" y="83.82"/>
+<instance part="J1" gate="G$1" x="17.78" y="83.82" rot="MR0"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="U2" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <wire x1="5.08" y1="53.34" x2="2.54" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="53.34" x2="2.54" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="45.72" x2="2.54" y2="53.34" width="0.1524" layer="91"/>
-<junction x="2.54" y="53.34"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="17.78" x2="50.8" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
@@ -5079,63 +5074,60 @@ Bytes In-System Programmable Flash</description>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="86.36" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="83.82" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
 <junction x="55.88" y="83.82"/>
 <wire x1="48.26" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="OUT"/>
+<pinref part="U1" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="5.08" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="33.02" x2="2.54" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="40.64" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
-<junction x="2.54" y="33.02"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="6"/>
+<pinref part="J2" gate="G$1" pin="6"/>
 <wire x1="48.26" y1="12.7" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="12.7" x2="50.8" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="10.16" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
 <label x="58.42" y="10.16" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="20.32" y1="81.28" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="27.94" y1="76.2" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="55.88" y1="76.2" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="GND"/>
-<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="40.64" y1="76.2" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PB3(PCINT3/XTAL1/CLKI/OC1B/ADC3)"/>
+<pinref part="U2" gate="G$1" pin="PB3(PCINT3/XTAL1/CLKI/OC1B/ADC3)"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PB4(PCINT4/XTAL2/CLKO/OC1B/ADC2)"/>
+<pinref part="U2" gate="G$1" pin="PB4(PCINT4/XTAL2/CLKO/OC1B/ADC2)"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
 </segment>
@@ -5360,14 +5352,14 @@ Bytes In-System Programmable Flash</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="17.78" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 <label x="22.86" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1)"/>
+<pinref part="U2" gate="G$1" pin="PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1)"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 <label x="86.36" y="50.8" size="1.778" layer="95" rot="MR0"/>
@@ -5375,12 +5367,12 @@ Bytes In-System Programmable Flash</description>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="33.02" y1="15.24" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
 <label x="22.86" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB2(SCK/USCK/SCL/ADC1/T0/INT0/PCINT2)"/>
+<pinref part="U2" gate="G$1" pin="PB2(SCK/USCK/SCL/ADC1/T0/INT0/PCINT2)"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
 <label x="86.36" y="45.72" size="1.778" layer="95" rot="MR0"/>
@@ -5388,26 +5380,26 @@ Bytes In-System Programmable Flash</description>
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="5"/>
+<pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="33.02" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="12.7" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="10.16" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
 <label x="22.86" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB5(PCINT5/RESET/ADC0/DW)"/>
+<pinref part="U2" gate="G$1" pin="PB5(PCINT5/RESET/ADC0/DW)"/>
 <wire x1="76.2" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
 <label x="86.36" y="30.48" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="48.26" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
 <label x="58.42" y="15.24" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)"/>
+<pinref part="U2" gate="G$1" pin="PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
 <label x="86.36" y="55.88" size="1.778" layer="95" rot="MR0"/>
@@ -5415,11 +5407,11 @@ Bytes In-System Programmable Flash</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="81.28" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="IN"/>
+<pinref part="U1" gate="G$1" pin="IN"/>
 <wire x1="27.94" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <junction x="27.94" y="83.82"/>
 </segment>
